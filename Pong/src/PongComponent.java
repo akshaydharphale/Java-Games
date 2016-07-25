@@ -45,6 +45,15 @@ public class PongComponent extends JComponent implements KeyListener, Runnable
 		}
 	}
 
+	/*
+		Update method:
+		Calls the PongEnvironment's update method. Which updates the location of the ball based on the 
+		it's current position. Also moves the computer's paddle to the Y dimension of the ball.
+
+		Checks if the down key or up key is being pressed and accordingly moves the left paddle.
+
+	*/
+
 	public void update()
 	{
 		environment.update();

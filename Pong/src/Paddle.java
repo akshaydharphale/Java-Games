@@ -14,6 +14,14 @@ public class Paddle
 		this.y = y;
 	}
 
+	/*
+		moveTo():
+
+		Function used to move the computer's paddle. If the distance between the paddle's
+		current position and ball's Y dimesion is more than MAX_SPEED then the paddle 
+		only moves by MAX_SPEED in the appropriate direction.
+	*/
+
 	public void moveTo(int y)
 	{
 		if(Math.abs(this.y-y) > MAX_SPEED)
